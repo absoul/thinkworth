@@ -1,3 +1,6 @@
+<h5 class="right-align">
+	<small class="waves-effect waves-light btn"><%= link_to("Add New Package", new_package_path, class: "link_button")%></small>
+</h5>
 
 <% @packages.limit(4).each do |p|%>
 	<ul>
