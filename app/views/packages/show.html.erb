@@ -1,3 +1,16 @@
-<%= image_tag @package.image_url %>
+<div>
+	<%= image_tag @package.image_url, size:"350x350" %>
+</div>
+<h4> <%= @package.title %> </h4>
 
+<h5>
+	<%= @package.price %>
+</h5>
+<br>
+
+<p>
+	<%= @package.description %>
+</p>
+
+<%= link_to("edit", edit_package_path(@package))%> |	
 <%= link_to("delete",@package, method: :delete, data:{ confirm: "Are you sure?"})%>

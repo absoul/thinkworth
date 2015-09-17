@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby 2.2.1p85
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -29,6 +30,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass'
 
 gem 'carrierwave'
+
+gem 'rails_12factor', group: :production
 
 # Use Unicorn as the app server
 # gem 'unicorn'
