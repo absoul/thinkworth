@@ -1,0 +1,55 @@
+
+<% @packages.limit(4).each do |p|%>
+	<ul>
+		<li class = "list-block">
+			<div> <%= link_to(image_tag(p.image, size:"250x250"), p) %> </div>
+			<div> <%= link_to(p.title, p) %> </div>
+		</li>
+	</ul>
+<% end %>
+<br>
+
+<% @packages.drop(4).take(4).each do |p|%>
+	<ul>
+		<li class = "list-block">
+			<div> <%= link_to(image_tag(p.image, size:"250x250"), p) %> </div>
+			<div> <%= link_to(p.title, p) %> </div>
+		</li>
+	</ul>
+<% end %>
+
+<% @packages.drop(8).take(4).each do |p|%>
+	<ul>
+		<li class = "list-block">
+			<div> <%= link_to(image_tag(p.image, size:"250x250"), p) %> </div>
+			<div> <%= link_to(p.title, p) %> </div>
+		</li>
+	</ul>
+<% end %>
+
+<% @packages.drop(12).take(4).each do |p|%>
+	<ul>
+		<li class = "list-block">
+			<div> <%= link_to(image_tag(p.image, size:"250x250"), p) %> </div>
+			<div> <%= link_to(p.title, p) %> </div>
+		</li>
+	</ul>
+<% end %>
+
+<% @packages.drop(16).take(4).each do |p|%>
+	<ul>
+		<li class = "list-block">
+			<div> <%= link_to(image_tag(p.image, size:"250x250"), p) %> </div>
+			<div> <%= link_to(p.title, p) %> </div>
+		</li>
+	</ul>
+<% end %>
+
+<% @packages.drop(20).take(4).each do |p|%>
+	<ul>
+		<li class = "list-block">
+			<div> <%= link_to(image_tag(p.image, size:"250x250"), p) %> </div>
+			<div> <%= link_to(p.title, p) %> </div>
+		</li>
+	</ul>
+<% end %>

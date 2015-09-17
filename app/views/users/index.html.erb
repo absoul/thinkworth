@@ -1,0 +1,28 @@
+<h2>Users</h2>
+
+<%= link_to("Sign up",new_user_path)%><br><br>
+
+
+
+<table class="bordered striped">
+  	
+	<thead>
+		<tr>
+        	<th>User</th>
+        	<th>First Name</th>
+        	<th>Last Name</th>
+        	<th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    	<% @users.each do |u| %>	
+       	<tr>
+        	<td><strong><%= link_to(u.username, u) %></strong></td>
+        	<td><%= u.first_name %></td>
+        	<td><%= u.last_name %></td>
+        	<td><%= u.email %></td>
+        </tr>
+        <% end %> 
+    </tbody>
+</table>	
